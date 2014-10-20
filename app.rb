@@ -14,7 +14,7 @@ def target_uri? uri
 end
 
 def target_content? res
-  res['content-type'] =~ /image/ || res['content-type'] =~ /audio/
+  res['content-type'] =~ /(image|audio)/
 end
 
 def valid_content? res
