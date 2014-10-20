@@ -4,7 +4,7 @@
 This proxy caches all images and audio files into your local machine. When the browser try to access those cached resources, it cancels and just return local cache.
 
 
-## Why am I use this?
+## Why do I use this software?
 
 Because this game has too many assets, so too slow to play confortably.
 
