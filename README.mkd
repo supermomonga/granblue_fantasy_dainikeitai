@@ -1,0 +1,23 @@
+
+## What is this?
+
+This proxy caches all images and audio files into your local machine. When the browser try to access those cached resources, it cancels and just return local cache.
+
+
+## Why am I use this?
+
+Because this game has too many assets, so too slow to play confortably.
+
+
+## How to use
+
+- `bundle install`
+- `ruby ./app.rb`
+- Set `127.0.0.1:8080` to your OS or web browser's proxy setting
+- Open `http://gbf.game.mbga.jp/` with your web browser
+- Enjoy!
+
+
+## Important notice
+
+Please use this software at your own risk. :surfer:
