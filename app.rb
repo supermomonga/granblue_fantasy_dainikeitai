@@ -31,7 +31,7 @@ def h str, color
   @h.color str, color
 end
 
-handler = Proc.new() {|req, res|
+handler = ->(req, res) {
   if target_uri?(req.request_uri) && target_content?(res) && valid_content?(res)
     cache_path = cache_path req.request_uri
     File.write(cache_path, res.body) unless File.exists? cache_path
@@ -39,7 +39,7 @@ handler = Proc.new() {|req, res|
   end
 }
 
-callback = Proc.new {|req, res|
+callback = ->(req, res) {
   cache_path = cache_path req.request_uri
   if target_uri?(req.request_uri) && File.exists?(cache_path)
     puts h "cache found: #{ req.unparsed_uri }", :green
